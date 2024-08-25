@@ -13,6 +13,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.foodorderingapp.Adapter.PopularAdapter
+import com.example.foodorderingapp.BottomSheetFragment
 import com.example.foodorderingapp.R
 import com.example.foodorderingapp.databinding.FragmentHomeBinding
 
@@ -29,6 +30,12 @@ private lateinit var binding: FragmentHomeBinding
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+        binding.ViewAllMenu.setOnClickListener{
+            val bottomSheetDialog = BottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager,"Test")
+        }
+
         return binding.root
 
 

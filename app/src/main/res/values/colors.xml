@@ -5,4 +5,5 @@
     <color name="textcolor">#07983D</color>
     <color name="startcolor">#53e88b</color>
     <color name="endcolor">#15be77</color>
+    <color name="trasparent">#00000000</color>
 </resources>
